@@ -16,5 +16,7 @@ endif
 # Add new source files here
 LOCAL_SRC_FILES += Kernel/CKMod.cpp
 
+LOCAL_CFLAGS += -Wno-null-conversion
+
 # Header files for components including this module
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/Kernel

@@ -20,12 +20,12 @@ ifeq ($(TARGET_SOC), exynos5420)
 
 exynos5420_dirs := \
     mobicore \
-	gralloc \
-	libdisplaymodule \
-	libhwcutilsmodule \
-	libhdmimodule \
+    gralloc \
+    libexynosdisplaymodule \
+    libhwcutilsmodule \
+    libhdmimodule \
     libhwjpeg \
-	libsecurepath
+    libsecurepath
 
 ifeq ($(BOARD_USES_VIRTUAL_DISPLAY), true)
 exynos5420_dirs += \

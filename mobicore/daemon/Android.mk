@@ -39,6 +39,9 @@ LOCAL_EXPORT_C_INCLUDE_DIRS +=\
 
 LOCAL_CFLAGS += -DLOG_ANDROID
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
 include $(LOCAL_PATH)/Kernel/Android.mk
 
 include $(BUILD_SHARED_LIBRARY)

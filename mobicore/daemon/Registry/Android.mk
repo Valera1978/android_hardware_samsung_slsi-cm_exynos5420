@@ -4,6 +4,9 @@
 #
 # =============================================================================
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-gnu-designator
+
 # Add new folders with header files here
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/Registry/Public
 

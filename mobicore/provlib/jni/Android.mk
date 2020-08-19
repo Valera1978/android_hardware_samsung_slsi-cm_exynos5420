@@ -32,4 +32,6 @@ LOCAL_LDFLAGS     := -Wl,-rpath-link,$(SYSTEM_LIB_DIR) \
 
 LOCAL_SHARED_LIBRARIES  := $(GDM_PROVLIB_SHARED_LIBS)
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+
 include $(BUILD_SHARED_LIBRARY)

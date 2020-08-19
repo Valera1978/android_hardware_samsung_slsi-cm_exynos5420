@@ -13,6 +13,8 @@ APP_OPTIM := debug
 # Show all warnings
 #APP_CFLAGS := -Wall
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+
 MC_INCLUDE_DIR := \
     $(COMP_PATH_TlCm)/Public \
     $(COMP_PATH_TlCm)/Public/TlCm \

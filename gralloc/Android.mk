@@ -37,4 +37,8 @@ LOCAL_MODULE := gralloc.exynos5
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := samsung_arm
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+LOCAL_CFLAGS += -Wno-unused-function
+
 include $(BUILD_SHARED_LIBRARY)
