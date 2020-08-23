@@ -39,7 +39,6 @@ LOCAL_ADDITIONAL_DEPENDENCIES += \
 LOCAL_SRC_FILES := \
 	ExynosVirtualDisplayModule.cpp
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libvirtualdisplaymodule
 include $(BUILD_SHARED_LIBRARY)
 

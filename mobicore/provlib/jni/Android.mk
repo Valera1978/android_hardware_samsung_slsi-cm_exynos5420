@@ -3,7 +3,6 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE      := libgdmcprov
-LOCAL_MODULE_TAGS := eng
 
 LOCAL_C_INCLUDES  := $(LOCAL_PATH)/../inc_private \
                      $(LOCAL_PATH)/../inc_public \
@@ -33,5 +32,6 @@ LOCAL_LDFLAGS     := -Wl,-rpath-link,$(SYSTEM_LIB_DIR) \
 LOCAL_SHARED_LIBRARIES  := $(GDM_PROVLIB_SHARED_LIBS)
 
 LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-implicit-fallthrough
 
 include $(BUILD_SHARED_LIBRARY)

@@ -34,7 +34,6 @@ LOCAL_SRC_FILES := 	\
 LOCAL_CFLAGS := -DLOG_TAG=\"gralloc\"
 
 LOCAL_MODULE := gralloc.exynos5
-LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := samsung_arm
 
 LOCAL_CFLAGS += -Wno-unused-parameter

@@ -51,7 +51,6 @@ LOCAL_SRC_FILES:= \
 	ExynosJpegEncoderForCamera.cpp \
 	ExynosCameraHWImpl.cpp
 
-LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libexynoscamera
 
 include $(BUILD_SHARED_LIBRARY)
@@ -85,8 +84,6 @@ LOCAL_SHARED_LIBRARIES:= libutils libcutils libbinder liblog libcamera_client li
 LOCAL_SHARED_LIBRARIES += libexynosutils libhwjpeg libexynosv4l2 libcsc libion libexynoscamera
 
 LOCAL_MODULE := camera.$(TARGET_BOOTLOADER_BOARD_NAME)
-
-LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 
